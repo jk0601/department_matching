@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+buildCommand = "pip install -r requirements.txt"
+
+[deploy]
+startCommand = "streamlit run app.py --server.headless true --server.enableCORS false --server.enableXsrfProtection false --server.port $PORT --server.address 0.0.0.0"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE" 

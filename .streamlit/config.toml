@@ -1,0 +1,15 @@
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+enableWebsocketCompression = false
+allowRunOnSave = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+caching = false
+
+[logger]
+level = "error" 
